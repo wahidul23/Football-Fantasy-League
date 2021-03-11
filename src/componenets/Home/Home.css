@@ -1,0 +1,49 @@
+
+.homeStyle{
+    background-image: linear-gradient(to bottom right, rgb(4, 27, 49), rgb(19, 100, 133));
+}
+.header{
+    background-image: url(../Images/stadium2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+.header h1{
+    font-size: 50px;
+}
+.LeagueBox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 50px;
+}
+/* Responsive Web Site  */
+@media only screen and (max-width: 599px) {
+    .LeagueBox{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 30px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .LeagueBox{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 30px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .LeagueBox{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 30px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .LeagueBox{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
